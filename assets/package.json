@@ -1,0 +1,19 @@
+{
+  "name": "lastvibe-project",
+  "version": "1.0.0",
+  "description": "Slim project.",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-sass": "^2.1.0"
+  },
+  "scripts": {
+    "start": "gulp",
+    "build": "gulp sass"
+  },
+  "author": "Ivan",
+  "license": "1",
+  "private": true
+}
