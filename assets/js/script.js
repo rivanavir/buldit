@@ -1,8 +1,19 @@
 $(document).ready(function(){
 
   if($(document).width() <= 992){
-    console.log(this);
-
+    $('.main-wrapper').addClass('fixed-head');
+  } else{
+    $('.main-wrapper').removeClass('fixed-head');
   }
+
+  $('#navToggle').on('click', function(event){
+    $('#navbarNav').fadeToggle('slow');
+
+    $('body').one('click',function() {
+      $('#navbarNav').fadeToggle('slow');
+    });
+
+    event.stopPropagation();
+  })
 
 })
