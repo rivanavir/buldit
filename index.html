@@ -23,8 +23,8 @@
                 <span>een vakman op maat</span>
               </h1>
             </div>
-            <div class="col flex-last">
-              <ul class="nav justify-content-end">
+            <div class="col flex-last hidden-md-down">
+              <ul class="nav top-head-nav justify-content-end">
                 <li class="nav-item">
                   <a class="nav-link" href="#">HOME</a>
                 </li>
@@ -34,18 +34,18 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#">CONTACT</a>
                 </li>
-                <li class="border-right"></li>
+                <li class="border-right">&nbsp;</li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">NL</a>
+                  <a class="nav-link lang-link" href="#">NL</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">FR</a>
+                  <a class="nav-link lang-link" href="#">FR</a>
                 </li>
                 <li class="nav-item">
-                  <a class="btn btn-warning" href="#">MIJN BULDIT</a>
+                  <a class="btn btn-warning head" href="#">MIJN BULDIT</a>
                 </li>
                 <li class="nav-item">
-                  <a class="btn btn-primary" href="#">LOGIN</a>
+                  <a class="btn btn-primary head" href="#">LOGIN</a>
                 </li>
               </ul>
             </div>
@@ -53,31 +53,64 @@
         </div>
       </div>
 
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
       <div class="head-nav-wrap">
         <div class="container">
           <nav class="navbar navbar-toggleable-md navbar-light">
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-              <ul class="navbar-nav ">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">BOUWADVIES</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">VIND EEN VAKMAN</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">DOE-HET-ZELF</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">OVER BULDIT</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">VAKMAN START</a>
-                </li>
-              </ul>
-              <a href="#" class="btn btn-info my-2 my-sm-0">VRAAG OFFERTE</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <div class="mobile-flex">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">BOUWADVIES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">VIND EEN VAKMAN</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">DOE-HET-ZELF</a>
+                  </li>
+                  <li class="nav-item hidden-md-down">
+                    <a class="nav-link" href="#">OVER BULDIT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">VAKMAN START</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav hidden-lg-up">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">NIEUWS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACT</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="top-btn-wrap hidden-md-down">
+                <a href="#" class="btn btn-info head">VRAAG OFFERTE</a>
+              </div>
+              <div class="hidden-lg-up">
+                <ul class="nav btn-nav justify-content-start">
+                  <li class="nav-item">
+                    <a class="btn btn-warning head" href="#">MIJN BULDIT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="btn btn-white head" href="#">LOGIN</a>
+                  </li>
+                </ul>
+                <ul class="nav mobile-nav justify-content-start hidden-lg-up">
+                  <li class="nav-item active">
+                    <a class="nav-link lang-link" href="#">NL</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link lang-link" href="#">FR</a>
+                  </li>
+                </ul>
+              </div>
             </div>
           </nav>
         </div>
@@ -87,12 +120,18 @@
     <div class="top-banner">
       <div class="container">
         <div class="row justify-content-md-center">
-          <div class="col-6">
-            <h2>Bouwplannen? Wij helpen jou.</h2>
-            <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="text" placeholder="Search">
-              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+          <div class="col-md-8">
+            <div class="top-txt">
+              <h2>Bouwplannen? Wij helpen jou.</h2>
+              <form class="form-inline search-form">
+                <div class="input-wrap">
+                  <input class="form-control mr-sm-2" type="text" placeholder="Zoek bouwadvies">
+                  <button class="btn btn-search" type="submit">
+                    <i class="icon-search"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
@@ -100,66 +139,94 @@
 
     <div class="compare-layer">
       <div class="container">
-        <h4>Gratis Vergelijken!</h4>
-        <p>Ontvang 3 offertes van verschillende leveranciers, met 1 enkele aanvraag !</p>
-        <div class="row">
-          <div class="col">
-            <div class="img-wrap">
-              <img src="./assets/images/img-1.png" alt="">
+        <h4 class="section-ttl">Gratis Vergelijken!</h4>
+        <p class="sub">Ontvang 3 offertes van verschillende leveranciers, met 1 enkele aanvraag !</p>
+        <div class="row-wrap">
+          <div class="row">
+            <div class="col-sm-4">
+              <div class="compare-block">
+                <div class="img-wrap">
+                  <div class="img-inner">
+                    <img src="./assets/images/img-1.png" alt="">
+                  </div>
+                </div>
+                <div class="compare-txt">
+                  <span class="stap">Stap 1</span>
+                  <h5>Plaats jouw opdracht</h5>
+                  <p>Lorem ipsum dolor sit amet con sectetuer adipiscing elit, sed diam</p>
+                </div>
+              </div>
             </div>
-            <h5>Plaats jouw opdracht</h5>
-            <p>Lorem ipsum dolor sit amet con sectetuer adipiscing elit, sed diam</p>
-          </div>
-          <div class="col">
-            <div class="img-wrap">
-              <img src="./assets/images/img-2.png" alt="">
+            <div class="col-sm-4">
+              <div class="compare-block">
+                <div class="img-wrap">
+                  <div class="img-inner">
+                    <img src="./assets/images/img-2.png" alt="">
+                  </div>
+                </div>
+                <div class="compare-txt">
+                  <span class="stap">Stap 2</span>
+                  <h5>Ontvang 3 offertes</h5>
+                  <p>Lorem ipsum dolor sit amet con sectetuer adipiscing elit, sed diam</p>
+                </div>
+              </div>
             </div>
-            <h5>Ontvang 3 offertes</h5>
-            <p>Lorem ipsum dolor sit amet con sectetuer adipiscing elit, sed diam</p>
-          </div>
-          <div class="col">
-            <div class="img-wrap">
-              <img src="./assets/images/img-3.png" alt="">
+            <div class="col-sm-4">
+              <div class="compare-block">
+                <div class="img-wrap">
+                  <div class="img-inner">
+                    <img src="./assets/images/img-3.png" alt="">
+                  </div>
+                </div>
+                <div class="compare-txt">
+                  <span class="stap">Stap 3</span>
+                  <h5>Kies jouw vakman</h5>
+                  <p>Lorem ipsum dolor sit amet con sectetuer adipiscing elit, sed diam</p>
+                </div>
+              </div>
             </div>
-            <h5>Kies jouw vakman</h5>
-            <p>Lorem ipsum dolor sit amet con sectetuer adipiscing elit, sed diam</p>
           </div>
         </div>
-        <a href="#" class="btn btn-warning my-2 my-sm-0">PLAATS GRATIS JE OPDRACHT</a>
+        <div class="btn-wrap">
+          <a href="#" class="btn btn-warning my-2 my-sm-0">PLAATS GRATIS JE OPDRACHT</a>
+        </div>
       </div>
     </div>
 
     <div class="question-layer">
       <div class="container">
-        <h4>Waarom buldit?</h4>
-        <div class="row">
-          <div class="col">
+        <h4 class="section-ttl">Waarom buldit?</h4>
+        <div class="row q-row">
+          <div class="col q-block">
             <i class="icon-euro"></i>
             <span>Helemaal gratis</span>
           </div>
-          <div class="col">
+          <div class="col q-block">
             <i class="icon-clock"></i>
             <span>Offertes binnen 24u</span>
           </div>
-          <div class="col">
+          <div class="w-100 hidden-md-up"></div>
+          <div class="col q-block">
             <i class="icon-helmet"></i>
             <span>634 erkende aannemers</span>
           </div>
-          <div class="col">
+          <div class="col q-block">
             <i class="icon-like"></i>
             <span>Beoordeel vakman</span>
           </div>
         </div>
-        <a href="#" class="btn btn-warning my-2 my-sm-0">MEER OVER BULDIT</a>
+        <div class="btn-wrap hidden-sm-down">
+          <a href="#" class="btn btn-warning">MEER OVER BULDIT</a>
+        </div>
       </div>
     </div>
 
     <div class="craftsman-layer">
       <div class="container">
-        <h4>Welke vakman zoek je?</h4>
+        <h4 class="section-ttl">Welke vakman zoek je?</h4>
         <div class="row">
           <div class="col">
-            <ul class="craftman-list">
+            <ul class="craftsman-list">
               <li>
                 <i class="icon-helmet"></i>
                 <span>Aannemer</span>
@@ -190,8 +257,8 @@
               </li>
             </ul>
           </div>
-          <div class="col">
-            <ul class="craftman-list">
+          <div class="col hidden-xs-down visible-sm-up">
+            <ul class="craftsman-list">
               <li>
                 <i class="icon-isolatie"></i>
                 <span>Isolatiespecialist</span>
@@ -222,8 +289,8 @@
               </li>
             </ul>
           </div>
-          <div class="col">
-            <ul class="craftman-list">
+          <div class="col hidden-md-down">
+            <ul class="craftsman-list">
               <li>
                 <i class="icon-schrijnwerker"></i>
                 <span>Schrijnwerker</span>
@@ -247,30 +314,34 @@
             </ul>
           </div>
         </div>
-        <a href="#" class="btn btn-warning my-2 my-sm-0">BEKIJK ALLE SPECIALITEITEN</a>
+        <div class="btn-wrap">
+          <a href="#" class="btn btn-warning">BEKIJK ALLE SPECIALITEITEN</a>
+        </div>
 
-        <div class="row">
-          <div class="col">
-            <h3>Ik wil bouwadvies?</h3>
-            <div class="stuff-wrap">
-              <div class="img-wrap">
-                <img src="./assets/images/img-4.png" alt="">
-              </div>
-              <div class="txt-wrap">
-                <p>Lorem ipsum dolor sit amet con sectetuer adipiscing elit sed diam </p>
-                <a href="#" class="btn btn-warning my-2 my-sm-0">ONTDEK</a>
+        <div class="stuff-layer">
+          <div class="row">
+            <div class="col-sm-6">
+              <h3 class="section-ttl">Ik wil bouwadvies?</h3>
+              <div class="stuff-wrap">
+                <div class="img-wrap">
+                  <img src="./assets/images/img-4.png" alt="">
+                </div>
+                <div class="txt-wrap">
+                  <p>Lorem ipsum dolor sit amet con sectetuer adipiscing elit sed diam </p>
+                  <a href="#" class="btn btn-warning my-2 my-sm-0">ONTDEK</a>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col">
-            <h3>Doe het zelf</h3>
-            <div class="stuff-wrap">
-              <div class="img-wrap">
-                <img src="./assets/images/img-5.png" alt="">
-              </div>
-              <div class="txt-wrap">
-                <p>Lorem ipsum dolor sit amet con sectetuer adipiscing elit sed diam </p>
-                <a href="#" class="btn btn-warning my-2 my-sm-0">ONTDEK</a>
+            <div class="col-sm-6">
+              <h3 class="section-ttl">Doe het zelf</h3>
+              <div class="stuff-wrap">
+                <div class="img-wrap">
+                  <img src="./assets/images/img-5.png" alt="">
+                </div>
+                <div class="txt-wrap">
+                  <p>Lorem ipsum dolor sit amet con sectetuer adipiscing elit sed diam </p>
+                  <a href="#" class="btn btn-warning my-2 my-sm-0">ONTDEK</a>
+                </div>
               </div>
             </div>
           </div>
@@ -281,75 +352,94 @@
 
     <div class="news-layer">
       <div class="container">
-        <h3>Nieuws</h3>
+        <h3 class="section-ttl">Nieuws</h3>
         <div class="row">
-          <div class="col">
-            <img src="./assets/images/news-img-1.jpg" alt="">
-            <div class="new-txt">
-              <p class="light-ttl">CONSTRUCTIE</p>
-              <p class="title">LOREM IPSUM DOLOR SIT AMET CONSECTETUER ADIPISCING</p>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore ... </p>
+          <div class="col-md-3 col-sm-6">
+            <div class="news-block">
+              <div class="img-wrap">
+                <img src="./assets/images/news-img-1.jpg" alt="">
+              </div>
+              <div class="new-txt">
+                <p class="light-ttl">CONSTRUCTIE</p>
+                <p class="title">LOREM IPSUM DOLOR SIT AMET CONSECTETUER ADIPISCING</p>
+                <p class="hidden-xs-down">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore ... </p>
+              </div>
             </div>
           </div>
-          <div class="col">
-            <img src="./assets/images/news-img-2.jpg" alt="">
-            <div class="new-txt">
-              <p class="light-ttl">DAKWERKEN</p>
-              <p class="title">LOREM IPSUM DOLOR SIT AMET CONSECTETUER ADIPISCING</p>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore ... </p>
+          <div class="col-md-3 col-sm-6">
+            <div class="news-block">
+              <div class="img-wrap">
+                <img src="./assets/images/news-img-2.jpg" alt="">
+              </div>
+              <div class="new-txt">
+                <p class="light-ttl">DAKWERKEN</p>
+                <p class="title">LOREM IPSUM DOLOR SIT AMET CONSECTETUER ADIPISCING</p>
+                <p class="hidden-xs-down">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore ... </p>
+              </div>
             </div>
           </div>
-          <div class="col">
-            <img src="./assets/images/news-img-3.jpg" alt="">
-            <div class="new-txt">
-              <p class="light-ttl">DAKWERKEN</p>
-              <p class="title">LOREM IPSUM DOLOR SIT AMET CONSECTETUER ADIPISCING</p>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore ... </p>
+          <div class="col-md-3 col-sm-6">
+            <div class="news-block">
+              <div class="img-wrap">
+                <img src="./assets/images/news-img-3.jpg" alt="">
+              </div>
+              <div class="new-txt">
+                <p class="light-ttl">DAKWERKEN</p>
+                <p class="title">LOREM IPSUM DOLOR SIT AMET CONSECTETUER ADIPISCING</p>
+                <p class="hidden-xs-down">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore ... </p>
+              </div>
             </div>
           </div>
-          <div class="col">
-            <img src="./assets/images/news-img-4.jpg" alt="">
-            <div class="new-txt">
-              <p class="light-ttl">DAKWERKEN</p>
-              <p class="title">LOREM IPSUM DOLOR SIT AMET CONSECTETUER ADIPISCING</p>
-              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore ... </p>
+          <div class="col-md-3 col-sm-6">
+            <div class="news-block">
+              <div class="img-wrap">
+                <img src="./assets/images/news-img-4.jpg" alt="">
+              </div>
+              <div class="new-txt">
+                <p class="light-ttl">DAKWERKEN</p>
+                <p class="title">LOREM IPSUM DOLOR SIT AMET CONSECTETUER ADIPISCING</p>
+                <p class="hidden-xs-down">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore ... </p>
+              </div>
             </div>
           </div>
         </div>
-
-        <a href="#" class="btn btn-warning my-2 my-sm-0">BEKIJK MEER NIEUWS</a>
+        <div class="btn-wrap">
+          <a href="#" class="btn btn-warning">BEKIJK MEER NIEUWS</a>
+        </div>
       </div>
     </div>
 
     <div class="accredit-master-layer">
       <div class="container">
         <div class="row">
-          <div class="col-5">
-            <h3>We werken met 678 erkende vakmannen</h3>
-            <a href="#" class="btn btn-warning my-2 my-sm-0">VOEG JOUW BEDRIJF TOE</a><br>
+          <div class="col-sm-5">
+            <h3 class="section-ttl">We werken met 678 erkende vakmannen</h3>
+            <div class="btn-wrap hidden-xs-down">
+              <a href="#" class="btn btn-warning">VOEG JOUW BEDRIJF TOE</a><br>
+            </div>
             <a href="#" class="partner-logo">
               <img src="./assets/images/partner-logo.png" alt="">
             </a>
           </div>
-          <div class="col-7">
+          <div class="col-sm-7">
             <div class="row">
-              <div class="col">
+              <div class="col-sm-4 col-6 img-wrap">
                 <img src="./assets/images/accredit-img-1.jpg" alt="">
               </div>
-              <div class="col">
+              <div class="col-sm-4 col-6 img-wrap">
                 <img src="./assets/images/accredit-img-2.jpg" alt="">
               </div>
-              <div class="col">
+              <div class="col-sm-4 col-6 img-wrap">
                 <img src="./assets/images/accredit-img-3.jpg" alt="">
               </div>
-              <div class="w-100"></div>
-              <div class="col">
+              <div class="w-100 hidden-xs-down"></div>
+              <div class="col-sm-4 col-6 img-wrap">
                 <img src="./assets/images/accredit-img-4.jpg" alt="">
               </div>
-              <div class="col">
+              <div class="col-sm-4 col-6 img-wrap">
                 <img src="./assets/images/accredit-img-5.jpg" alt="">
               </div>
-              <div class="col">
+              <div class="col-sm-4 col-6 img-wrap">
                 <img src="./assets/images/accredit-img-6.jpg" alt="">
               </div>
             </div>
@@ -366,9 +456,9 @@
           </div>
           <div class="col-9">
             <h3>Nu is het aan jou!</h3>
-            <a href="#" class="btn btn-warning my-2 my-sm-0">OFFERTE AANVRAGEN</a>
-            <a href="#" class="btn btn-warning my-2 my-sm-0">VIND EEN VAKMAN</a>
-            <a href="#" class="btn btn-warning my-2 my-sm-0">AANMELDEN ALS VAKMAN</a>
+            <a href="#" class="btn btn-warning">OFFERTE AANVRAGEN</a>
+            <a href="#" class="btn btn-warning">VIND EEN VAKMAN</a>
+            <a href="#" class="btn btn-warning">AANMELDEN ALS VAKMAN</a>
           </div>
         </div>
       </div>
@@ -377,9 +467,9 @@
   </div>
   <footer>
     <div class="container">
-      <div class="row">
+      <div class="row link-row">
         <div class="col">
-          <h3>OVER BULDIT</h3>
+          <h3 class="foot-list-ttl">OVER BULDIT</h3>
           <ul class="foot-link-list">
             <li><a href="#">Lorem ipsum dolor</a></li>
             <li><a href="#">Sit amet con</a></li>
@@ -388,7 +478,7 @@
           </ul>
         </div>
         <div class="col">
-          <h3>VAKMAN</h3>
+          <h3 class="foot-list-ttl">VAKMAN</h3>
           <ul class="foot-link-list">
             <li><a href="#">Lorem ipsum dolor</a></li>
             <li><a href="#">Sit amet con</a></li>
@@ -397,7 +487,7 @@
           </ul>
         </div>
         <div class="col">
-          <h3>HOE WERKT HET</h3>
+          <h3 class="foot-list-ttl">HOE WERKT HET</h3>
           <ul class="foot-link-list">
             <li><a href="#">Lorem ipsum dolor</a></li>
             <li><a href="#">Sit amet con</a></li>
@@ -406,7 +496,7 @@
           </ul>
         </div>
         <div class="col">
-          <h3>CONTACT</h3>
+          <h3 class="foot-list-ttl">CONTACT</h3>
           <ul class="foot-link-list">
             <li><a href="#">Lorem ipsum dolor</a></li>
             <li><a href="#">Sit amet con</a></li>
@@ -437,7 +527,7 @@
           </ul>
         </div>
       </div>
-      <p class="copyright">@copy 2017 - Evotis bvba -  Privacy & gebruiksvoorwaarden</p>
+      <p class="copyright">&copy;2017 - Evotis bvba -  Privacy & gebruiksvoorwaarden</p>
     </div>
   </footer>
 
