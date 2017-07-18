@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  if($(document).width() <= 992){
+  if($(document).width() <= 991){
     $('.main-wrapper').addClass('fixed-head');
   } else{
     $('.main-wrapper').removeClass('fixed-head');

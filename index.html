@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>Buldit</title>
 </head>
@@ -51,11 +52,11 @@
             </div>
           </div>
         </div>
+        <button class="navbar-toggler navbar-toggler-right" id="navToggle">
+          <span class="navbar-toggler-icon"></span>
+        </button>
       </div>
 
-      <button class="navbar-toggler navbar-toggler-right" id="navToggle">
-        <span class="navbar-toggler-icon"></span>
-      </button>
       <div class="head-nav-wrap">
         <div class="container">
           <nav class="navbar navbar-toggleable-md navbar-light">
@@ -228,31 +229,45 @@
           <div class="col">
             <ul class="craftsman-list">
               <li>
-                <i class="icon-helmet"></i>
+                <span class="icon-wrap">
+                  <i class="icon-helmet"></i>
+                </span>
                 <span>Aannemer</span>
               </li>
               <li>
-                <i class="icon-architect"></i>
+                <span class="icon-wrap">
+                  <i class="icon-architect"></i>
+                </span>
                 <span>Architect</span>
               </li>
               <li>
-                <i class="icon-badkamer"></i>
+                <span class="icon-wrap">
+                  <i class="icon-badkamer"></i>
+                </span>
                 <span>Badkamerspecialist</span>
               </li>
               <li>
-                <i class="icon-dakwerker"></i>
+                <span class="icon-wrap">
+                  <i class="icon-dakwerker"></i>
+                </span>
                 <span>Dakwerker</span>
               </li>
               <li>
-                <i class="icon-elektricien"></i>
+                <span class="icon-wrap">
+                  <i class="icon-elektricien"></i>
+                </span>
                 <span>Elektricien</span>
               </li>
               <li>
-                <i class="icon-glaszetter"></i>
+                <span class="icon-wrap">
+                  <i class="icon-glaszetter"></i>
+                </span>
                 <span>Glaszetter</span>
               </li>
               <li>
-                <i class="icon-hovenier"></i>
+                <span class="icon-wrap">
+                  <i class="icon-hovenier"></i>
+                </span>
                 <span>Hovenier / Tuinman</span>
               </li>
             </ul>
@@ -260,31 +275,45 @@
           <div class="col hidden-xs-down visible-sm-up">
             <ul class="craftsman-list">
               <li>
-                <i class="icon-isolatie"></i>
+                <span class="icon-wrap">
+                  <i class="icon-isolatie"></i>
+                </span>
                 <span>Isolatiespecialist</span>
               </li>
               <li>
-                <i class="icon-keuken"></i>
+                <span class="icon-wrap">
+                  <i class="icon-keuken"></i>
+                </span>
                 <span>Keukenspecialist</span>
               </li>
               <li>
-                <i class="icon-klusjesman"></i>
+                <span class="icon-wrap">
+                  <i class="icon-klusjesman"></i>
+                </span>
                 <span>Klusjesman</span>
               </li>
               <li>
-                <i class="icon-loodgieter"></i>
+                <span class="icon-wrap">
+                  <i class="icon-loodgieter"></i>
+                </span>
                 <span>Loodgieter / CV-Installateur</span>
               </li>
               <li>
-                <i class="icon-metselaar"></i>
+                <span class="icon-wrap">
+                  <i class="icon-metselaar"></i>
+                </span>
                 <span>Metselaar / Gevelspecialist</span>
               </li>
               <li>
-                <i class="icon-pleisterwerken"></i>
+                <span class="icon-wrap">
+                  <i class="icon-pleisterwerken"></i>
+                </span>
                 <span>Pleisterwerken</span>
               </li>
               <li>
-                <i class="icon-schilder"></i>
+                <span class="icon-wrap">
+                  <i class="icon-schilder"></i>
+                </span>
                 <span>Schilder / Behanger</span>
               </li>
             </ul>
@@ -292,23 +321,33 @@
           <div class="col hidden-md-down">
             <ul class="craftsman-list">
               <li>
-                <i class="icon-schrijnwerker"></i>
+                <span class="icon-wrap">
+                  <i class="icon-schrijnwerker"></i>
+                </span>
                 <span>Schrijnwerker</span>
               </li>
               <li>
-                <i class="icon-tegelzetter"></i>
+                <span class="icon-wrap">
+                  <i class="icon-tegelzetter"></i>
+                </span>
                 <span>Tegelzetter</span>
               </li>
               <li>
-                <i class="icon-terrasbouwer"></i>
+                <span class="icon-wrap">
+                  <i class="icon-terrasbouwer"></i>
+                </span>
                 <span>Terrasbouwer</span>
               </li>
               <li>
-                <i class="icon-vloerder"></i>
+                <span class="icon-wrap">
+                  <i class="icon-vloerder"></i>
+                </span>
                 <span>Vloerder / Parketteur</span>
               </li>
               <li>
-                <i class="icon-vochtexpert"></i>
+                <span class="icon-wrap">
+                  <i class="icon-vochtexpert"></i>
+                </span>
                 <span>Vochtexpert</span>
               </li>
             </ul>
@@ -423,24 +462,42 @@
           </div>
           <div class="col-sm-7">
             <div class="row">
-              <div class="col-sm-4 col-6 img-wrap">
-                <img src="./assets/images/accredit-img-1.jpg" alt="">
+              <div class="col-sm-4 col-6">
+                <div class="img-wrap">
+                  <span class="triangle"></span>
+                  <img src="./assets/images/accredit-img-1.jpg" alt="">
+                </div>
               </div>
-              <div class="col-sm-4 col-6 img-wrap">
-                <img src="./assets/images/accredit-img-2.jpg" alt="">
+              <div class="col-sm-4 col-6">
+                <div class="img-wrap">
+                  <span class="triangle"></span>
+                  <img src="./assets/images/accredit-img-2.jpg" alt="">
+                </div>
               </div>
-              <div class="col-sm-4 col-6 img-wrap">
-                <img src="./assets/images/accredit-img-3.jpg" alt="">
+              <div class="col-sm-4 col-6">
+                <div class="img-wrap">
+                  <span class="triangle"></span>
+                  <img src="./assets/images/accredit-img-3.jpg" alt="">
+                </div>
               </div>
               <div class="w-100 hidden-xs-down"></div>
-              <div class="col-sm-4 col-6 img-wrap">
-                <img src="./assets/images/accredit-img-4.jpg" alt="">
+              <div class="col-sm-4 col-6">
+                <div class="img-wrap">
+                  <span class="triangle"></span>
+                  <img src="./assets/images/accredit-img-4.jpg" alt="">
+                </div>
               </div>
-              <div class="col-sm-4 col-6 img-wrap">
-                <img src="./assets/images/accredit-img-5.jpg" alt="">
+              <div class="col-sm-4 col-6">
+                <div class="img-wrap">
+                  <span class="triangle"></span>
+                  <img src="./assets/images/accredit-img-5.jpg" alt="">
+                </div>
               </div>
-              <div class="col-sm-4 col-6 img-wrap">
-                <img src="./assets/images/accredit-img-6.jpg" alt="">
+              <div class="col-sm-4 col-6">
+                <div class="img-wrap">
+                  <span class="triangle"></span>
+                  <img src="./assets/images/accredit-img-6.jpg" alt="">
+                </div>
               </div>
             </div>
             <div class="btn-wrap hidden-sm-up">
@@ -454,10 +511,10 @@
     <div class="up-to-you-layer">
       <div class="container">
         <div class="row align-items-center">
-          <div class="col-3 pr-0">
+          <div class="col-4 col-md-3 pr-0">
             <img src="./assets/images/up-to-you.png" alt="">
           </div>
-          <div class="col-9 btn-wrapper">
+          <div class="col-8 col-md-9 btn-wrapper">
             <h3>Nu is het aan jou!</h3>
             <a href="#" class="btn btn-warning">OFFERTE AANVRAGEN</a>
             <a href="#" class="btn btn-warning">VIND EEN VAKMAN</a>
