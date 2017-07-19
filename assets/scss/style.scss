@@ -104,6 +104,11 @@ body{
   // }
 }
 .main-wrapper{
+  width: 1440px;
+  margin: 0 auto;
+  @media (max-width:1440px){
+    width: 100%;
+  }
   &.fixed-head{
     padding-top: 77px;
     position: relative;
